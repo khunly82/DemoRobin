@@ -1,0 +1,11 @@
+﻿@using DemoRobin.Domain.Entities
+
+<select name="@ViewBag.Name">
+
+    <option value="">Aucun</option>
+    @foreach(PokemonType type in Model)
+    {
+        <option value="@type.Id">@type.Nom</option>
+    }
+
+</select>

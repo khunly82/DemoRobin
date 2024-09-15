@@ -1,0 +1,7 @@
+﻿<p>Utilisateur connecté: @ViewData["ConnectedUser"]</p>
+
+@foreach(ProductModel p in Model)
+{
+    <div>@p.Name</div>
+    <div>@p.CategoryName</div>
+}
